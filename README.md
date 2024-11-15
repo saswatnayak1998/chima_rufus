@@ -21,6 +21,11 @@ Rufus is a web scraping tool designed for Retrieval-Augmented Generation (RAG) s
 - When given a query, use the same embedding model used to embed the web data to FAISS vector db(all-MiniLM-L6-v2) to embed the query. Then use this query vector to search for the most semantically similar chunks in the FAISS vector db. The metadata(links, title etc) are stored in the same metadata file. Some example data scraped are stored in the **my_project/website_metadata.json** and **my_project/website_docs_faiss.index** file.
 - Then this metadata can be used as context to answer the query!
 
+## IMPROVEMENTS
+
+- Use GPT-4 instead of Llama2(7B)
+- Use Claude API which knows what link to click in the webpage based on the instructions(Need more time to implement). Need to pull up a VM and train it.
+
 ---
 
 ## Setup
