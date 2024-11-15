@@ -35,6 +35,7 @@ Rufus is a web scraping tool designed for Retrieval-Augmented Generation (RAG) s
 Ensure you have the following installed:
 
 - **Python 3.9 or later**
+- Have a local instance of Llama2 running(use Ollama for this)
 - **pip** (Python package manager)
 - **Ollama** (optional) for local LLM processing
 
