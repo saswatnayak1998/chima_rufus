@@ -12,7 +12,8 @@ Rufus is a web scraping tool designed for Retrieval-Augmented Generation (RAG) s
 ## How does it work?
 
 - Rufus scrapes the web for user defined **url**. There is a depth parameter that controls how deep the scraper will go(It is set to 3 by default).
-- The scraped content is then filtered for relevance using a locally run LLM by comparing them with the user defined **instructions**. This is not very good yet because I am using Llama2 instead of a state of the art LLM like GPT-4o which will perform much better because of the larger context length and the larger number of parameters.
+- The scraped content along with the FAISS vector database is then filtered for relevance using a locally run LLM by comparing them with the user defined **instructions**. This is not very good yet because I am using Llama2 instead of a state of the art LLM like GPT-4o which will perform much better because of the larger context length and the larger number of parameters.
+- I have scraped a YC W24 website and the results are stored in the **my_project/website_metadata.json** and the vector database is stored in the **my_project/website_docs_faiss.index** file.
 
 ---
 
