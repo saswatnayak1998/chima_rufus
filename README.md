@@ -52,13 +52,12 @@ pip install -r requirements.txt
 This will allow us to make changes to the code and have them reflected without needing to reinstall the package.
 
 ```bash
-cd my_project/rufus
-pip install -e .
+cd my_project
+pip install Rufus
 ```
 
 ### Step 5: test it out!
 
 ```bash
-cd ..
 python test.py
 ```
