@@ -39,17 +39,12 @@ git clone https://github.com/yourusername/rufus.git
 ```bash
 python3 -m venv chima_venv
 source chima_venv/bin/activate
-
-
 ```
 
 ### Step 3: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
-
-
-
 ```
 
 ### Step 4: pip install rufus
@@ -57,8 +52,8 @@ pip install -r requirements.txt
 This will allow us to make changes to the code and have them reflected without needing to reinstall the package.
 
 ```bash
+cd my_project/rufus
 pip install -e .
-
 ```
 
 ### Step 5: test it out!
@@ -66,5 +61,4 @@ pip install -e .
 ```bash
 cd ..
 python test.py
-
 ```
