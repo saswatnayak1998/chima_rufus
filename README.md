@@ -15,6 +15,12 @@ Rufus is a web scraping tool designed for Retrieval-Augmented Generation (RAG) s
 - The scraped content along with the FAISS vector database is then filtered for relevance using a locally run LLM by comparing them with the user defined **instructions**. This is not very good yet because I am using Llama2 instead of a state of the art LLM like GPT-4o which will perform much better because of the larger context length and the larger number of parameters.
 - I have scraped a YC W24 website and the results are stored in the **my_project/website_metadata.json** and the vector database is stored in the **my_project/website_docs_faiss.index** file.
 
+## How to use it in a RAG pipeline?
+
+- First get the relevant data from the web with Rufus(Intelligent scraping)
+- When given a query, use the same embedding model used to embed the web data to FAISS vector db(all-MiniLM-L6-v2) to embed the query. Then use this query vector to search for the most semantically similar chunks in the FAISS vector db. The metadata(links, title etc) are stored in the same metadata file. Some example data scraped are stored in the **my_project/website_metadata.json** and **my_project/website_docs_faiss.index** file.
+- Then this metadata can be used as context to answer the query!
+
 ---
 
 ## Setup
