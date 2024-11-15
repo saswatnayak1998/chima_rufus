@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Rufus
+Version: 0.1
+Summary: Rufus - AI-powered web scraping for RAG applications
+Author: Saswat
+Requires-Python: >=3.9
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
+Requires-Dist: faiss-cpu
+Requires-Dist: sentence-transformers
+Requires-Dist: openai
+Requires-Dist: python-dotenv
+Requires-Dist: webdriver-manager
+Requires-Dist: numpy

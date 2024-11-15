@@ -1,0 +1,8 @@
+setup.py
+Rufus.egg-info/PKG-INFO
+Rufus.egg-info/SOURCES.txt
+Rufus.egg-info/dependency_links.txt
+Rufus.egg-info/requires.txt
+Rufus.egg-info/top_level.txt
+rufus/__init__.py
+rufus/ai_scraper.py
